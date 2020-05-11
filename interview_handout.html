@@ -1,0 +1,544 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>interview_handout</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; }
+button, input, select, textarea { color: inherit; font: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 2; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px !important; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { padding-left: 32px; padding-right: 32px; padding-bottom: 0px; break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; overflow-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none 0s ease 0s; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+svg[id^="mermaidChart"] { line-height: 1em; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
+
+
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    padding-bottom: .3em;
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+   padding-bottom: .3em;
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border-top: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table tr th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr th:first-child,
+table tr td:first-child {
+    margin-top: 0;
+}
+table tr th:last-child,
+table tr td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+.html-for-mac .context-menu {
+    --item-hover-bg-color: #E6F0FE;
+}
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+ .typora-export li, .typora-export p, .typora-export,  .footnote-line {white-space: normal;} 
+</style>
+</head>
+<body class='typora-export os-windows' >
+<div  id='write'  class = 'is-node first-line-indent'><h1><a name="面经" class="md-header-anchor"></a><span>面经</span></h1><p><span>我从4月份才开始真正的投递公司，就有点晚了。有些公司都是赶在尾声投递的。所以我是看到c++关键字就试者投递了一下。</span></p><h2><a name="腾讯-后台开发-第一次正式面试）" class="md-header-anchor"></a><span>腾讯 后台开发 （第一次正式面试）</span></h2><p><span>第一次投递，还没来的及看面经看看都有什么题目。刚投递，腾讯来了面试邀请我发送冲突延迟1天，结果下午直接来电话面试。</span></p><h3><a name="一面-挂了）" class="md-header-anchor"></a><span>一面 （挂了）</span></h3><ol start='' ><li><span>c++ 虚函数？</span>
+<span>大概把虚函数表，有继承的情况，基础多个父类部分有虚函数的情况简单说了一下</span></li><li><span>tcp 的三次握手 4次挥手流程？\</span>
+<span>4次挥手的最后一次客户端发送（ACK=1）之后等待2个最长报文时间描述错了。\</span>
+<span>面试官问我确认吗？我回答：刚学计网这边有点记错了</span></li><li><span>STL了解多吗？\</span>
+<span>平时用过一些</span></li><li><span>简单说一下set和map底层是什么实现的？\</span>
+<span>使用自平衡二叉树</span></li><li><span>你确定是平衡二叉树吗？\</span>
+<span>我感觉是吧, 我没有太过仔细看里面的实现(是在是太紧张了, 脑子空白, 当时就凭着记忆回忆了数据结构学的所有的树, 回答了我觉得最合理的一棵树. 后面回想可能是面试官希望听到具体的红黑树而不是泛泛的平衡二叉树)</span></li><li><span>你是没有了解过STL的实现吗?(知道我没有准备或者很菜, 有点不开心了) \</span>
+<span>不好意思, 我平时这边可能欠缺注意.</span></li><li><span>那要是你实现一个链表你会怎么实现?\</span>
+<span>用双向链表吧, 牺牲一点空间换一点性能吧.</span></li><li><span>你平时c++都看过什么书\</span>
+<span>我看的c++的书可能比较少一点, 看到一些实现类的东西多吧.</span></li><li><span>行吧, 那我就到这里了.你有什么要问我的吗?\</span>
+<span>那个您觉得我这次有什么不足的地方要加强吗?\</span>
+<span>你这个基础知识不够啊,有很多都是基础的,你答不上来很影响的.</span></li></ol><h3><a name="反思" class="md-header-anchor"></a><span>反思</span></h3><p><span>确实是我自己的问题, 我没有做好准备就开始浪费他们的时间. 痛定思痛, 专心准备几天</span></p><h2><a name="字节-系统工程-第二次面试" class="md-header-anchor"></a><span>字节 系统工程 (第二次面试)</span></h2><p><span>初生牛犊不怕虎, 投了一个不知道的岗位. 因为其他位置要求了一些很具体的要求, 我没有达到. 只剩下这个相对吻合.</span></p><p><span>一开始简单讲了一下项目，觉得没有特别之处，就开始问基础知识了</span></p><ol start='' ><li><span>struct 关键字的size判断\</span>
+<span>看机器, 和字节对齐要求.比如我的是64位机器那么int long 是32位.\</span></li><li><span>64位机器, long 是32位吗?\</span>
+<span>我记得是这样的, c语言的这些保留字混乱, 在int, long, long在平台不一定, long long 一定是最长的. 我记得我试的时候在我的平台和编译器上是32位.</span></li><li><span>那你的机器是32位的吧. 那你说这个对齐. 为啥要这么对齐, 以8位对齐和3、5对齐有什么区别呢?\</span>
+<span>8位对齐的话位便宜的最小单位是8, 同样3、5对齐就是3和5. 8位的话对于常用的指针和int等类型来说浪费较大. 对齐位小了,效率又低.</span>
+<span>比如3, 5 位这种非2的幂对齐则会对性能有影响。因为现在计算机体系的寻址位移导致2的幂次寻址快。</span></li><li><span>后面就是一个简单的算法题：在无序数组中找到按序左右差最小的两个数</span>
+<span>归并排序排序加线性扫描（其实在最后一次合并的时候可以直接扫描出来不用真的合并，当时太急着给答案没想到）</span></li></ol><p><span>被转岗，简历没通过。面试过程很轻松和舒适，我都不知道是怎么挂的。</span></p><h2><a name="smartx最难受的一次面试）" class="md-header-anchor"></a><span>smartX（最难受的一次面试）</span></h2><p><span>一家做存储的公司，但是我看要求上没有太多，所以我去试试了。</span></p><p><span>面试官个人情绪很重。</span></p><h3><a name="一面挂了" class="md-header-anchor"></a><span>一面挂了</span></h3><ol start='' ><li><span>项目经历，我看你这些项目都没啥意义，你这个存储项目还是比较近期做的是吧，先考考你基础知识。</span></li><li><span>你了解VFS吗？open操作是怎么做的。\</span>
+<span>是要站在什么角度去思考这个问题，是要考虑定时器终端吗（一开始我没有反应过来VFS是虚拟文件系统）</span></li><li><span>不用粒度那么细，就是考虑VFS就行\</span>
+<span>VFS我没有了解（我们学校新换的教材，是</span><strong><em><span>OSTEP</span></em></strong><span>，没有讲虚拟文件系统，而是一个真实的文件系统。我后来才想起来虚拟文件系统的缩写是这个VFS）</span></li><li><span>你们不学操作系统吗，你不是计科吗？那我问你IPC中哪个最快。</span>
+<span>信号量，或者共享内存吧（这边真的是记不清楚了，忘记信号量是怎么实现的了。 明显面试官已经不耐烦了）</span></li><li><span>进程，线程，协程的区别？</span>
+<span>进程线程很简单，但是我协程说的少，我就知道c++要支持协程了，协程比线程更轻量。</span></li><li><span>问了一个网络链路的问题，具体也忘记了好像是同一子网下已知ip通信的问题，感觉考的是arp。\</span>
+<span>被质问这不是网络书第二章的内容吗，你为啥都没学，那后面网络也不用问你了。\</span>
+<span>虽然解释了，现在的教材是自顶向下，第二章是应用层http啥的，但是面试官已经被我的不专业搞得不开心了。</span></li><li><span>你都是怎么学习的，你最近不是再做一个单机KV吗，你看了什么。\</span>
+<span>我整理了目前主流的数据库索引方式，比如b+树，还有一些内存数据库的索引有：跳表、哈希、平衡二叉树。（我发现我说自平衡二叉树，好多人都只会以为我要表达的是AVL这种平衡深度的树，其实红黑树也是的啊是黑色平衡以后这边我会强调是红黑的）\</span>
+<span>还有最近在看Redis分析的文章，在看一下我需要的点。</span></li><li><span>那你是一篇paper都没读过吗，你没有度过paper你的高度就只会在那个写《XXX剖析XXX》的水平，而且还有可能会被误导。\</span>
+<span>嗯，因为我确实是没有想过看他们的储时paper，我在官网看了官网的文章。</span></li><li><span>官网文章是给使用者看的，你看这些没有意义。那你随便讲一下你最近阅读过的paper。</span>
+<span>我最近可能没怎么看过paper(我是真的没想起来，因为我以为问的是那种顶会很出名的那种)我看过一个人改良了传统的hash map成为了内存友好型。并且分析了和谷歌提供的map空间利用率。在他的future work里面提到了他已经有想法把利用率提高到87.5%</span></li><li><span>好，你说hash map的内存友好，hash map为啥内存不友好。\</span>
+<span>这个不友好是相对而言的吧，你和红黑树比肯定快，但是消耗空间。</span></li><li><span>hash怎么就比红黑树消耗空间了，hash就是一个计算的再存储，你同样要存储相同的数据，树还有指针索引的浪费，为啥hash内存不友好。\</span>
+<span>我不太清楚，我以为是红黑的分配是动态的，而hash不太一样，hash map 要指定大小，为了冲突降低或者雪崩效应，hash要分配的空间要大于自己暂时需要的大小。</span></li><li><span>真的是这样吗，你都没有好好了解。hash确实在一些场景内存不友好，但不是你说的。</span></li><li><span>后面就是我问他咋学习，咋看paper学习。面试官虽然十分不耐烦，语气声音已经不正常了，但是依旧非常详细的给我解答并且告诉我看paper的重要性。因为</span><strong><span>这是一个项目开始的纲领，虽然实现和这个paper会差的很远，但是你这样才会知道为什么这么做，还有方向</span></strong></li></ol><h3><a name="反思-n71" class="md-header-anchor"></a><span>反思</span></h3><p><span>这次面试直接自闭，感觉就很废物。啥都不会，但是也托这次面试的福，我再后面两天刷了一下raft一致性的初始论文、MapReduce、GFS的论文，发现其实这种paper其实也就是一种正式的博客。只不过很权威性。而且这些技术博客的语言已经很简单了，就是思想比较难而已。</span></p><p><span>这次面试很痛苦，但是收获也多。</span></p><h2><a name="深信服-三轮技术面已拿offer）" class="md-header-anchor"></a><span>深信服 （三轮技术面，已拿offer）</span></h2><h3><a name="一面" class="md-header-anchor"></a><span>一面</span></h3><p><span>简单聊项目，聊了聊面试过程中遇到的难处。和重新设计会怎么操作。</span></p><ol start='' ><li><span>c++ 虚函数</span></li><li><span>tcp 三次握手、四次挥手</span></li><li><span>一道智力题</span></li></ol><p><span>还有一些比较基础给忘记了</span></p><h3><a name="二面" class="md-header-anchor"></a><span>二面</span></h3><p><span>问项目经历，和校园经历</span></p><ol start='' ><li><span>你们的并发操作是什么实现的</span>
+<span>我写的线程池，一单一个线程休息了，用消费者锁从任务队列取一个任务做。把cpu的一些核隔离起来，让cpu不能把任务安排过去，然后把程序绑定过去。</span></li><li><span>这个项目做的时候有遇到什么坑吗？\</span>
+<span>我是写线程池和负责http报文解析和构造的人，我有一个队友在写socket任务的时候在一个地方忘记释放文件描述符了，造成了每次运行能承载的量是不一定的，很诡异的问题。我后来发现文件描述符的问题之后，帮他改释放了。同时修改了系统配置，把文件描述符的上限开到了100k，因为我电脑笔记本的一级缓存只有256k，100k足够用。</span></li><li><span>我现在有足够用的服务器，如果想要承受600m并发数的访问，你要修改那些配置。\</span>
+<span>我觉得首先就是哪个文件描述符的数量，然后把后面的保留端口全部打开，因为一共有65535个端口，而后面被保留了很多全部打开，每个端口分配一定的线程让乘积大于等于600m就可以。</span></li><li><code>int (*a[8])(int)</code><span>是什么</span>
+<span>函数指针数组，参数int、返回int、这个系列有八个函数可以用偏移或者[]访问到。</span></li><li><span>给了一个更复杂的式子，其实也是一个函数只不过已知其地址位0x1000000。要求是如何跳转到这个地址上。\</span>
+<span>首先想到的是</span><strong><em><span>CSAPP</span></em></strong><span>里面的缓存区溢出攻击。被反驳，因为段错误。后面才想到其实可以定义一个二维指针，指向的地址是</span><code>0x1000000</code><span>。然后用这个指针就可以使用这个函数了。</span></li><li><span>后面又考了两个智力题</span></li></ol><h3><a name="三面" class="md-header-anchor"></a><span>三面</span></h3><p><span>被鸽了30分钟，然后对方在家里面试我。</span></p><ol start='' ><li><span>看了你的简历，没有很多的科研经历。你做过什么吗，我看你在导师那里做了一些东西。\</span>
+<span>我balabala说了一堆，概括了一下核心：其实是一个非对称加密的密钥分配的一个改进。</span></li><li><span>那其实也不是很复杂的东西，我是说那种开源的东西...又聊了为啥校园生活没有经历ACM啊等等。</span></li><li><span>聊了很多项目理解啥的</span></li><li><span>做了两个题，简单题被卡了20分钟很尬尴。然后一个稍微难一点的题3分钟A了</span></li><li><span>最后我问了面试表现，面试官说你这个第一天确实很失望，但还好第二题做回来了。</span></li></ol><h3><a name="后记" class="md-header-anchor"></a><span>后记</span></h3><p><span>我以为挂了，因为简单题没搞出来。但是没想到一天后收到了offer，都没有什么HR面。深信服反馈也挺快的。</span></p><h2><a name="阿里一面在流程）" class="md-header-anchor"></a><span>阿里（一面，在流程）</span></h2><ol start='' ><li><span>成绩咋样，讲述项目。</span></li><li><span>几个基本知识</span></li><li><span>一道算法题目就是一个子集树。（中间写了一些不必要的临时变量）我给删了，所以稍微耽误了时间。</span></li><li><span>我问他我的表现中有什么不满意的吗？\</span>
+<span>面试官说我写代码思路乱乱的？没懂什么意思。</span></li></ol><h2><a name="腾讯被捞刚一面）" class="md-header-anchor"></a><span>腾讯（被捞，刚一面）</span></h2><p><span>第一次被三个人同时面试，他们换人的时候说了一句“我没什么问题了，那我来。”吓得我以为人格分裂，解释清楚了之后后面的面试流程就比较轻松</span></p><h3><a name="项目经历" class="md-header-anchor"></a><span>项目经历</span></h3><p><span>这里切换了一次人，两个人轮流提问，我基本没有停过</span></p><p><span>真的很详细。包括我说的一个细节：我们的解数独用的算法是我们稍微在BFS上优化了，加入随机模型更好触发平均性能。</span></p><p><span>对面一下子来兴趣了。</span></p><blockquote><p><span>你这个算法是有数学整明还是什么。</span></p></blockquote><p><span>不是数学整明，而是在解的分布上，大致遵循正态分布在整个解空间中，所以我建立的随机算法也是准寻一个正态分布。所以我们就是这样做的。</span></p><blockquote><p><span>那为啥不直接从中间找。</span></p></blockquote><p><span>直接从中间找其实有点类似与深度学习过程中的过拟合，把正态分布过拟合成了中间为100%概率。这样虽然在这个区间内有良好的性能，但是对于最差情况就很糟糕了。加入随机性就是希望降低最差情况的影响。在最后的40G数据量测试下都能保证较好的性能</span></p><blockquote><p><span>你说的这个编译器里面的闭包特性是你预计要实现的是吗</span></p></blockquote><p><span>用我对维基百科的了解讲了一下闭包的概念。实现思路就是一个匿名函数，然后把定义这个匿名函数的函数的局部变量设置为调用处的内部匿名变量。使得在被调用的词法作用域内值被记录达到一种保存状态的效果。</span></p><p><span>还有一些细节给忘记了。</span></p><h3><a name="操作系统网络和c基础" class="md-header-anchor"></a><span>操作系统、网络和c++基础</span></h3><p><span>这里切换了1次人，问了很多。基本我没停过，一个面试官想问题，另一个在想。</span></p><p><span>压力挺大的，也挺紧张。还好有人格分裂乌龙。导致气氛相对缓和。</span></p></div>
+</body>
+</html>
